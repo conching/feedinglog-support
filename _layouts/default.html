@@ -72,18 +72,15 @@
       width: 72px;
       height: 72px;
       margin: 0 auto 16px;
-      background: linear-gradient(135deg, var(--terracotta), var(--terracotta-light));
       border-radius: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
       box-shadow: 0 8px 24px rgba(217,115,102,0.25);
     }
 
-    .logo svg {
-      width: 40px;
-      height: 40px;
-      fill: white;
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .site-title {
@@ -339,7 +336,7 @@
   <div class="container">
     <header>
       <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.5c-.5 0-1 .1-1.4.3C9.4 3.3 8.5 4.5 8.5 6v1.5c-1.2.4-2 1.5-2 2.8V18c0 2.2 1.8 4 4 4h3c2.2 0 4-1.8 4-4v-7.7c0-1.3-.8-2.4-2-2.8V6c0-1.5-.9-2.7-2.1-3.2-.4-.2-.9-.3-1.4-.3zm-1.5 4V6c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5v.5h-3zm5 3.8V18c0 1.1-.9 2-2 2h-3c-1.1 0-2-.9-2-2v-7.7c0-.6.4-1 1-1h5c.6 0 1 .4 1 1z" fill="white"/></svg>
+        <img src="{{ '/app-icon.png' | relative_url }}" alt="BumpTrackr Feeding Log app icon">
       </div>
       <div class="site-title">BumpTrackr Feeding Log</div>
       <div class="site-subtitle">Companion app to BumpTrackr</div>
