@@ -1,0 +1,7 @@
+title: BumpTrackr Feeding Log
+description: Support pages for the BumpTrackr Feeding Log iOS app
+url: "https://conching.github.io"
+baseurl: "/feedinglog-support"
+markdown: kramdown
+kramdown:
+  parse_block_html: true
